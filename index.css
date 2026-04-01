@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(to right , white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.box {
+    position: relative;
+    width: 450px;
+    min-height: 200px;
+    background: linear-gradient(145deg, #ffd6e0, #ffb3c6); /* soft pink gradient */
+    border-radius: 30px;                /* rounded corners */
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3), 0 8px 15px rgba(255, 182, 193, 0.4);
+    border: 5px solid black;          /* subtle border */
+    overflow: hidden;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+/* Hover effect for modern feel */
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.5), 0 12px 20px rgba(255, 182, 193, 0.5);
+}
+
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+    animation: fadeblink 3s infinite;
+}
+    @keyframes fadeblink{
+       0%{opacity: 1;} 
+       50%{opacity: 0.5;}
+       100%{opacity: 1;}
+    }
+#sender {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 22px;
+    margin: 0;
+    color: #5a0033; /* darker shade */
+    font-weight: bold;
+}
